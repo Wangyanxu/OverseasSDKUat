@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "title": "连接",
+            "isShow": false
+        },
+        {
+            "title": "消息",
+            "isShow": false
+        },
+        {
+            "title": "GroupChannel",
+            "isShow": false
+        },
+        {
+            "title": "OpenChannel",
+            "isShow": false
+        }
+    ]
+}

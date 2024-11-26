@@ -1,0 +1,162 @@
+{
+    "连接": [
+        {
+            "初始化": "initialize:",
+            "参数":"appkey;areaCode;logLevel",
+        },
+        {
+            "连接": "connect:",
+            "参数":"userId;token;timeout",
+        },
+        {
+            "添加 Channel 监听": "addChannelDelegate:",
+            "参数":""
+        },
+        {
+            "状态": "GroupChannel",
+            "参数":"channelId;channelName"
+        },
+        {
+            "登出": "OpenChannel",
+            "参数":"channelId;channelName"
+        }
+    ],
+    "消息": [
+        {
+            "发送自定义消息": "sendCustomMessage:",
+            "参数":"k:v,;customType;GroOrOpen;policy"
+        },
+        {
+            "发送文本消息": "sendTextMessage:",
+            "参数":"GroOrOpen;con;Men;userIds;menMessage"
+        },
+        {
+            "发送文件消息": "sendFileMessage:",
+            "参数":"GroOrOpen;type;Men;userIds;menMessage"
+        },
+        {
+            "双向删除消息": "deleteMessage:",
+            "参数":"GroOrOpen;messageUID"
+        },
+        {
+            " GroupChannel 修改消息": "updateMessage:",
+            "参数":"messageUID"
+        },
+        {
+            "消息根据关键字搜索": "searchMessagesByKeyword:",
+            "参数":"keyword"
+        },
+        {
+            "GroupChannel 消息根据用户 ID 搜索": "searchMessagesByUserID:",
+            "参数":"userID"
+        },
+        {
+            "获取 GroupChannel 消息列表": "getMessgesList:",
+            "参数":"queryType;tampTo;limit;messageType"
+        }
+    ],
+    "GroupChannel": [
+        {
+            "创建 GroupChannel": "groupChannelCreate:",
+            "参数":"Id;channelName;isSuper;SubName"
+        },
+        {
+            "创建 GroupSubchannel": "groupSubchannelCreate:",
+            "参数":"subId;subName;subType"
+        },
+        {
+            "更新 GroupChannel": "updateGroupChannel:",
+            "参数":"0gro1sub;name;id"
+        },
+        {
+            "获取单个 GroupChannel": "getGroupChannel:",
+            "参数":"channelId"
+        },
+        {
+            "邀请用户加入 GroupChannel": "inviteMember:",
+            "参数":"userIds"
+        },
+        {
+            "用户主动加入 GroupChannel": "joinGroupChannel:",
+            "参数":"channelId"
+        },
+        {
+            "添加移除 SubChannel 成员": "addOrRemoveMembers:",
+            "参数":"0add1rem;user,user"
+        },
+        {
+            "用户离开 GroupChannel": "leaveGroupChannel:",
+            "参数":"channelId"
+        },
+        {
+            "获取 subchannel": "getSubchannelWithchannelId:",
+            "参数":"channelId"
+        },
+        {
+            "获取 GroupChannel 列表": "getGroupChannelList:",
+            "参数":"limit;isUnreadOnly;orderType;reverse"
+        },
+        {
+            "获取指定频道下 subchannel 列表": "getGroupSubchannelList:",
+            "参数":"isUnreadOnly;type"
+        },
+        {
+            "获取 GroupChannel 成员列表": "getGroupChannelUserLists:",
+            "参数":"0Gro1Sub;limit"
+        },
+        {
+            "解散 GroupChannel ": "deleteGroupChannel:",
+            "参数":"0Gro1Sub"
+        },
+        {
+            "获取 GroupChannel 消息未读数": "getUnreadMessageCount:",
+            "参数":"0Gro1gro2sub;Mentioned"
+        },
+        {
+            "设置 subchannel 免打扰级别": "setSubchannelNotificationLevel:",
+            "参数":"level"
+        },
+        {
+            "获取 subchannel 免打扰级别": "getSubchannelNotificationLevel:",
+            "参数":""
+        },
+        {
+            "清除 subchannel 未读数": "cleanUnreadMessages:",
+            "参数":""
+        }
+        ],
+    "OpenChannel": [
+        {
+            "创建 OpenChannel": "openChannelCreate:",
+            "参数":"Id;channelName;desType;time"
+        },
+        {
+            "更新 OpenChannel": "openChannelUpdate:",
+            "参数":"name;desType;time"
+        },
+        {
+            "获取 OpenChannel": "openChannelGet:",
+            "参数":"channelId"
+        },
+        {
+            "加入 OpenChannel": "openChannelEnter:",
+            "参数":"channelId"
+        },
+        {
+            "离开 OpenChannel": "openChannelExit:",
+            "参数":"channelId"
+        },
+        {
+            "获取属性 OpenChannel": "openChannelMetadataGet:",
+            "参数":"AllOrNot;key"
+        },
+        {
+            "设置属性 OpenChannel": "openChannelMetadataSet:",
+            "参数":"k:v"
+        },
+        {
+            "获取 OpenChannel 成员列表": "openChannelUserListsGet:",
+            "参数":"limit"
+        }
+    ]
+}
